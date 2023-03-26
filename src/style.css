@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  padding: 50px;
+  background-color: aqua;
+}
+
+h1{
+  font-size: 3em;
+}
+
+p{
+  font-size: 1.3em;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
