@@ -9,6 +9,10 @@ import Link from "./Link.vue";
 
 <template>
   <div class="header-container">
+    <div class="anchors flex">
+      <a href="#" class="anchor">Projects</a>
+      <a href="#" class="anchor">Contact</a>
+  </div>
     <div class="links-container flex">
       <Link name="Linkedin" link="#" :img="linkedinLogo" />
       <Link name="Discord" link="#" :img="discordLogo" />
@@ -17,33 +21,30 @@ import Link from "./Link.vue";
     <div class="main-container flex">
       <div class="photo-name-container flex">
         <img :src="photo" alt="" width="250" class="photo" />
-        <p>GROSSO ADSD</p>
       </div>
-      <div class="about-me">
-        <h1>About me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam saepe
-          dicta, err adipisicing elit. Veniam saepe dicta, err adipisicing elit.
-          Veniam saepe dicta, err adipisicing elit. Veniam saepe dicta, err
-          adipisicing elit. Veniam saepe dicta, err adipisicing elit. Veniam
-          saepe dicta, err adipisicing elit. Veniam saepe dicta, err adipisicing
-          elit. Veniam saepe dicta, err adipisicing elit. Veniam saepe dicta,
-          err adipisicing elit. Veniam saepe dicta, err adipisicing elit. Veniam
-          saepe dicta, err adipisicing elit. Veniam saepe dicta, err adipisicing
-          elit. Veniam saepe dicta, err adipisicing elit. Veniam saepe dicta,
-          err adipisicing elit. Veniam saepe dicta, err adipisicing elit. Veniam
-          saepe dicta, err adipisicing elit. Veniam saepe dicta, err
-          adipisicniam saepe dicta, err adipisicniam saepe dicta, err
-          adipisicniam saepe dicta, err adipisicniam saepe dicta, err
-          adipisicniam saepe dicta, err adipisicniam saepe dicta, err
-          adipisicniam saepe dicta, err adipisicing elit. Veniam saepe dicta,
-          error neque qui sunt fugit maxime assumenda inventore libero at culpa
-          ducimus et, laborum magnam velit voluptatum nihil excepturi!
-        </p>
-      </div>
-      <div class="anchors flex">
-          <a href="#" class="anchor">Projects</a>
-          <a href="#" class="anchor">Contact</a>
+      <div class="name-about-container flex">
+        <h1 class="name">Davi Figueiredo</h1>
+        <div class="about-me">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam saepe
+            dicta, err adipisicing elit. Veniam saepe dicta, err adipisicing elit.
+            Veniam saepe dicta, err adipisicing elit. Veniam saepe dicta, err
+            adipisicing elit. Veniam saepe dicta, err adipisicing elit. Veniam
+            saepe dicta, err adipisicing elit. Veniam saepe dicta, err adipisicing
+            elit. Veniam saepe dicta, err adipisicing elit. Veniam saepe dicta,
+            err adipisicing elit. Veniam saepe dicta, err adipisicing elit. Veniam
+            saepe dicta, err adipisicing elit. Veniam saepe dicta, err adipisicing
+            elit. Veniam saepe dicta, err adipisicing elit. Veniam saepe dicta,
+            err adipisicing elit. Veniam saepe dicta, err adipisicing elit. Veniam
+            saepe dicta, err adipisicing elit. Veniam saepe dicta, err
+            adipisicniam saepe dicta, err adipisicniam saepe dicta, err
+            adipisicniam saepe dicta, err adipisicniam saepe dicta, err
+            adipisicniam saepe dicta, err adipisicniam saepe dicta, err
+            adipisicniam saepe dicta, err adipisicing elit. Veniam saepe dicta,
+            error neque qui sunt fugit maxime assumenda inventore libero at culpa
+            ducimus et, laborum magnam velit voluptatum nihil excepturi!
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -75,6 +76,15 @@ import Link from "./Link.vue";
   max-width: 350px;
 }
 
+.name{
+  margin-bottom: 50px;
+  margin-left: 400px;
+}
+
+.name-about-container{
+  flex-direction: column;
+}
+
 .photo {
   border-radius: 50%;
   margin-bottom: 30px;
@@ -86,7 +96,8 @@ import Link from "./Link.vue";
 }
 
 .anchors{
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .anchor{
